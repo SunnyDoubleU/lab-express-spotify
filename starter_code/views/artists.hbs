@@ -1,0 +1,9 @@
+<div class="rowsOfThree">
+    {{#each singer}}
+    <div class="artistColumn">
+        <img src="{{this.images.[0].url}}" class="albumnCover">
+        <h2>{{this.name}}</h2>
+        <button class="greenBtn"><a value="{{this.id}}" href="/albums/{{this.id}}">View Albums</a></button>
+    </div>
+    {{/each}}
+</div>
